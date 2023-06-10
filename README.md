@@ -12,9 +12,9 @@ Configuration options are available in the `config` directory. `default.json` fi
 
 ## Code Structure
 
-The main entry point of the application is the `index.ts` file in the `src` directory. It initializes a new instance of the `GedeonCrawler` class and launches the browser using Puppeteer&#8203;.
+The main entry point of the application is the `index.ts` file in the `src` directory. It initializes a new instance of the `Crawler` class and launches the browser using Puppeteer&#8203;.
 
-The `GedeonCrawler.ts` file defines the `GedeonCrawler` class, which contains the core functionality of the crawler. It can connect to an account, search for profiles, and fetch profile data&#8203;.
+The `crawler.ts` file defines the `Crawler` class, which contains the core functionality of the crawler. It can connect to an account, search for profiles, and fetch profile data&#8203;.
 
 ## How to Run
 
