@@ -5,10 +5,10 @@ import {
 	BrowserLaunchArgumentOptions,
 	BrowserConnectOptions,
 } from "puppeteer";
-import { GedeonCrawler } from "./gedeonCrawler";
+import { Crawler } from "./crawler";
 
 const puppeteer = require("puppeteer");
-const log = new Logger({ name: "Gedeon Crawler" });
+const log = new Logger({ name: "Crawler" });
 
 const config: LaunchOptions &
 	BrowserLaunchArgumentOptions &
@@ -21,7 +21,7 @@ const config: LaunchOptions &
 	log.info("Lunching Browser");
 	const browser = await puppeteer.launch(config);
 
-	let crawler = new GedeonCrawler(browser);
+	let crawler = new Crawler(browser);
 	await crawler.run();
 	log.info("Closing Browser");
 	await browser.close();
