@@ -11,7 +11,7 @@ import { Logger } from "tslog";
 import { PuppeteerUtils } from "./PuppeteerUtils";
 const log = new Logger({ name: "gedeon crowler" });
 
-export class GedeonCrawler {
+export class Crawler {
 	private browser: Browser;
 	private cookies: any;
 
